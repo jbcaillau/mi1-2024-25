@@ -1,53 +1,49 @@
-![PNS](../logo-pns.png)
+![PNS](https://raw.githubusercontent.com/pns-mam/mi1/master/logo-pns.png)
+
 ## MAM3
+
 # Mathématiques de l'ingénieur.e 1
+
 # 2023-24
 
-# TD 9 - Équation de la chaleur
+# TD 8 - Convolution
 
-## Exo 1 
-
-Soit
-
-$$
-G_\sigma:x\mapsto\frac{1}{\sigma \sqrt{2 \pi}}e^{-\frac{x^2}{2\sigma^2}}
-$$
-
-et soit $\widehat{G}_\sigma$ sa transformée de Fourier.
+## Exercice 1
 
 ### 1.1
-Montrer que $\widehat{G}_\sigma$ est dérivable sur $\mathbf{R}$.
+Soient $f \in L^1(\mathbf{R})$ et $g \in L^\infty(\mathbf{R})$, montrer que $f * g$ est bien définie, que $f * g$ appartient à $L^\infty(\mathbf{R})$ et que
+
+$$ ||f * g||\_\infty \leq ||f||\_1 \cdot ||g||_\infty. $$
 
 ### 1.2
-En déduire que $\widehat{G}\_\sigma$ est solution une équation différentielle linéaire et la résoudre en s'appuyant sur le problème de Cauchy de condition initiale $\widehat{G}_\sigma(0)$ (que l'on calculera).
+Soient $f \in L^2(\mathbf{R})$ et $g \in L^2(\mathbf{R})$, montrer que $f * g$ est bien définie, que $f * g$ appartient à $L^\infty(\mathbf{R})$ et que
 
-## Exo 2
-Soit $f \in L^1(\mathbf{R})$ telle que
+$$ ||f * g||_\infty \leq ||f||_2 \cdot ||g||_2. $$
 
-$$
-f(t) = \int_{-\infty}^t g(s)\ \mathrm{d}s
-$$
+## Exercice 2
 
-avec $g \in L^1(\mathbf{R})$. On définit alors et on note $f':=g$.
-Montrer que pour tout $\xi \in \mathbf{R}$,
+Montrer que les produits de convolution ci-dessous sont bien définis et les calculer :
 
-$$
-\widehat{f'}(\xi)=2i\pi\xi\widehat{f}(\xi).
-$$
+### 2.1
 
-## Exo 3
-On considère une fonction qui à tout $(t,x)\in [0,+\infty[\times \mathbf{R}$, associe $u(t,x)\in \mathbf{R}.$ On suppose que pour $t\geq 0$, $u(t,\cdot), \partial_x u(t,\cdot), \partial_{xx} u(t,\cdot)$ sont toutes dans $L^1(\mathbf{R})$ (au sens de l'exercice 2).
-On cherche à décrire un tel $u$ vérifiant l'équation de la chaleur unidimensionnelle
+$$ \chi_{[0,1]} * \chi_{[0,1]} $$
 
-$$ \partial_t u(t,x) = \partial_{xx}u(t,x),\quad (t,x) \in ]0,+\infty[\times \mathbf{R}, $$
+### 2.2
 
-$$ u(0,x) = u_0(x). $$
+$$ \chi_{[-a,a]} * \cos,\quad \chi_{[-a,a]} * \sin \quad (a > 0) $$
+
+### 2.3
+
+$$ f * H $$ 
+
+pour $f \in L^1(\mathbf{R})$ et $H := \chi_{\mathbf{R}_+}$
+
+## Exercice 3
 
 ### 3.1
-Pour tout $t> 0$ fixé, exprimer $\widehat{\partial_{xx}u(t,\cdot)}$ en fonction de $\widehat{u(t,\cdot)}$. 
+Soient $f$ et $g$ dans $L^1(\mathbf{R})$, montrer que
+
+$$ \widehat{f * g} = \widehat{f} \cdot \widehat{g}. $$
 
 ### 3.2
-Montrer que pour tout $\xi \in \mathbf{R}$, $t\mapsto \widehat{u}(t,\xi)$ satisfait une équation différentielle linéaire. En déduire la valeur de $\widehat{u}(t,\xi)$ en fonction de $\widehat{u}_0(\xi)$.
-
-### 3.3
-En déduire $u(t,x)$ pour tout $t>0$ et $x\in \mathbf{R}$. (Indication : on rappelle la formule $\widehat{f * g}=\widehat{f} \cdot \hat{g}$ pour tout $f,g \in L^1(\mathbf{R})$.)
+Déterminer la transformée de Fourier de $\chi_{[0,1]} * \chi_{[0,1]} * \chi_{[0,1]}$.
