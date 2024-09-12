@@ -4,7 +4,7 @@
 # Mathématiques de l'ingénieur.e 1 
 # 2024-25
 
-[Discussions](https://github.com/pns-mam/mi1/discussions/1)
+[Discussion](https://github.com/pns-mam/mi1/discussions/1)
 
 [Plan du cours](cm/cm.md)
     
