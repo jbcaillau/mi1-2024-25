@@ -1,5 +1,6 @@
 ![PNS](logo-pns.png)
-## MAM3 - MI1
+
+## MAM3
 # Mathématiques de l'ingénieur.e 1 
 # 2024-25
 
@@ -27,11 +28,11 @@ TD 9 - Convolution
 
 TD 10 - Équation de la chaleur
 
-[Exam CC no. 1 (2023-24)](exam-cc1-old/exam-cc1.pdf)
+[Exam CC no. 1 (2023-24)](exam-cc1-old/exam-cc1.md)
 
-[Exam CC no. 2 (2023-24)](exam-cc2-old/exam-cc2.pdf)
+[Exam CC no. 2 (2023-24)](exam-cc2-old/exam-cc2.md)
 
-[Exam CC no. 3 (2023-24)](exam-cc3-old/exam-cc3.pdf)
+[Exam CC no. 3 (2023-24)](exam-cc3-old/exam-cc3.md)
 
 # Bibliographie[^1]
 [Féjoz, J. Chapitres d'intégration et probabilités](https://www.ceremade.dauphine.fr/~fejoz/Integration/integration-probabilites.pdf)
