@@ -2,9 +2,10 @@
 header-includes:
   - \usepackage{mathrsfs}
 ---
-
 ![PNS](https://raw.githubusercontent.com/pns-mam/mi1/master/logo-pns.png)
-# MAM3 - MI1
+
+## MAM3
+
 # Mathématiques de l'ingénieur.e 1 
 # 2024-25
 
