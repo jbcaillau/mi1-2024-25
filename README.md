@@ -9,23 +9,23 @@
     
 [TD 1 - Intégrales généralisées](td1/td1.md)
 
-[TD 2 - Intégrales multiples](td2/td2.md)
+TD 2 - Intégrales multiples
 
-[TD 3 - Mesures](td3/td3.md)
+TD 3 - Mesures
 
-[TD 4 - Convergence](td4/td4.md)
+TD 4 - Convergence
 
-[TD 5 - Intégrales à paramètre](td5/td5.md)
+TD 5 - Intégrales à paramètre
 
-[TD 6 - Espaces L^p](td6/td6.md)
+TD 6 - Espaces Lp
 
-[TD 7 - Fubini]
+TD 7 - Fubini
 
-[TD 8 - Transformée de Fourier](td8/td8.md)
+TD 8 - Transformée de Fourier
 
-[TD 9 - Convolution](td9/td9.md)
+TD 9 - Convolution
 
-[TD 10 - Équation de la chaleur](td10/td10.md)
+TD 10 - Équation de la chaleur
 
 [Exam CC no. 1 (2023-24)](exam-cc1-old/exam-cc1.pdf)
 

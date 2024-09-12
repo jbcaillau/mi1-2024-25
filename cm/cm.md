@@ -52,7 +52,7 @@ $\mu(B\setminus A)=\mu(B)-\mu(A)$ si $A \subset B$ et $\mu(A) < \infty$, continu
 - th. de continuité
 - th. de dérivabilité
 
-## Ch. 3 - Espaces L^p
+## Ch. 3 - Espaces Lp
 - prop. : inégalités de Hölder et Minkowski pour $1 < p < \infty$
 - déf. espaces $\mathscr{L}^p(X,\mathscr{B},\mu)$ et $L^p(X,\mathscr{B},\mu)$ pour $p \in [1,\infty]$
 - prop. : inégalité de Hölder (bis)
@@ -69,7 +69,7 @@ $\mu(B\setminus A)=\mu(B)-\mu(A)$ si $A \subset B$ et $\mu(A) < \infty$, continu
 
 ## Ch. 5 - Transformée de Fourier
 
-### 1. Transformée de Fourier L^1
+### 1. Transformée de Fourier L1
 - th. déf. : transformée de Fourier
 $\hat{f}(\xi):=\int_{\mathbf{R}} f(x)e^{-2i\pi\xi x}\,\mathrm{d}x$
 - prop. : effet des translations et homothéties
