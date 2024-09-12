@@ -6,7 +6,7 @@
 
 # 2023-24
 
-# TD 8 - Convolution
+# TD 9 - Convolution
 
 ## Exercice 1
 
