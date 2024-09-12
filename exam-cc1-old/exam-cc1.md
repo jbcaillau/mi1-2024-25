@@ -1,3 +1,7 @@
+---
+header-includes:
+  - \usepackage{mathrsfs}
+---
 ![PNS](https://raw.githubusercontent.com/pns-mam/mi1/master/logo-pns.png)
 
 ## MAM3
