@@ -23,7 +23,7 @@ où $\Omega := \lbrace (x,y) \in \mathbf{R}^2\ |\ 1 < x < 3,\ y > 2,\ x+y < 5 \r
 Calculer l'intégrale
 
 $$
-  I := \int_\Omega \frac{z\ \mathrm{d}x\mathrm{d}y\mathrm{d}z}{\sqrt{x+y}}
+  I := \int_\Omega \frac{z\ \mathrm{d}x\mathrm{d}y\mathrm{d}z}{\sqrt{x^2+y^2}}
 $$
 
 où $\Omega := \lbrace (x,y,z) \in \mathbf{R}^3\ |\ x^2+y^2 < a^2,\ 0 < z < a \rbrace$ (avec $a > 0$ fixé) en utilisant les coordonnées polaires :
