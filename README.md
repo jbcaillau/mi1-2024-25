@@ -9,8 +9,9 @@
 [Plan du cours](cm/cm.md)
     
 [TD 1 - Intégrales généralisées](td1/td1.md)
+((corrigé)[td1/td1-corr.pdf])
 
-TD 2 - Intégrales multiples
+[TD 2 - Intégrales multiples](td2/td2.md)
 
 TD 3 - Mesures
 
