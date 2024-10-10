@@ -20,7 +20,7 @@ Déterminer, si elles existent, les limites suivantes :
 $$ 
 \lim_{n \to \infty} \int_0^1 \frac{1+nx}{(1+x)^n}\ \mathrm{d}x,\quad
    \lim_{n \to \infty} \int_0^1 \sin\frac{1}{nx}\ \mathrm{d}x \quad (n \geq 1),\quad
-   \lim_{n \to \infty} \int_0^n e^-x(n+x)\ \mathrm{d}x.
+   \lim_{n \to \infty} \int_0^n e^{-x}(n+x)\ \mathrm{d}x.
 $$
 
 ### 1.2
