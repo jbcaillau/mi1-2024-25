@@ -17,9 +17,9 @@
 [TD 3 - Mesures](td3/td3.md)
 ([corrigé](td3/td3-corr.pdf))
 
-TD 4 - Convergence
+[TD 4 - Convergence](td4/td4.md)
 
-TD 5 - Intégrales à paramètre
+[TD 5 - Intégrales à paramètre](td5/td5.md)
 
 TD 6 - Espaces Lp
 
