@@ -60,7 +60,6 @@ Montrer que $F$ est dérivable sur $\mathbf{R}$ et calculer sa dérivée.
 ### 3.3
 Montrer que $F$ satisfait l'équation différentielle
 
-$$ y'(t) + \frac{t}{2} y(t) = 0. $$
- 
-### 3.4
-En déduire une nouvelle expression de $F$.
+$$ y'(t) + \frac{t}{2} y(t) = 0,\quad t \in \mathbf{R}, $$
+
+et en déduire une nouvelle expression de $F$.
