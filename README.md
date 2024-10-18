@@ -21,7 +21,7 @@
 
 [TD 5 - Intégrales à paramètre](td5/td5.md)
 
-TD 6 - Espaces Lp
+[TD 6 - Espaces Lp](td6/td6.md)
 
 TD 7 - Fubini
 
