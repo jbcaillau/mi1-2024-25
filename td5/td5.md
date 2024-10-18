@@ -45,3 +45,22 @@ Montrer que $F$ est dérivable sur $\mathbf{R}$ et calculer sa dérivée.
 
 ### 2.3
 En déduire une nouvelle expression de $F$.
+
+## Exercice 3
+Soit
+
+$$ F(t) := \int_0^\infty \cos(tx)e^{-x^2}\ \mathrm{d}x,\quad t \in \mathbf{R}. $$
+
+### 3.1
+Montrer que l'on définit bien ainsi une fonction de $\mathbf{R}$ dans $\mathbf{R}$.
+
+### 3.2
+Montrer que $F$ est dérivable sur $\mathbf{R}$ et calculer sa dérivée.
+
+### 3.3
+Montrer que $F$ satisfait l'équation différentielle
+
+$$ y'(t) + \frac{t}{2} y(t) = 0. $$
+ 
+### 3.4
+En déduire une nouvelle expression de $F$.
