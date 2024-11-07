@@ -20,14 +20,14 @@ Soient $a$ et $b$ deux réels, $a < b$. Soit $f \in \mathscr{L}^1([a,b]^2)$.
 
 Montrer que les deux intégrales ci-dessous sont bien définies et égales : 
 
-$$ \int_a^b \left( \int_a^x f(x,y)\ \mathrm{d}y \right)\ \mathrm{d}x
- = \int_a^b \left( \int_y^b f(x,y)\ \mathrm{d}x \right)\ \mathrm{d}y =: I. $$
+$$ \int_a^b \left( \int_a^x f(x,y)\,\mathrm{d}y \right) \mathrm{d}x
+ = \int_a^b \left( \int_y^b f(x,y)\,\mathrm{d}x \right) \mathrm{d}y =: I. $$
 
 ### 1.2
 
 On suppose de plus que, presque pour tout $(x,y) \in [a,b]^2$, on a $f(y,x)=f(x,y)$. Montrer que
 
-$$ I = \frac{1}{2} \int_{[a,b]^2} f(x,y)\ \mathrm{d}x\mathrm{d}y. $$
+$$ I = \frac{1}{2} \int_{[a,b]^2} f(x,y)\,\mathrm{d}x\mathrm{d}y. $$
 
 ## Exercice 2
 
@@ -48,11 +48,8 @@ $\partial^2 f/\partial y\partial x$ continues.
 
 Soient $a \leq b$ et $c \leq d$, calculer
 
-$$ \int_c^d \left( \int_a^b \frac{\partial^2 f}{\partial x\partial y}\,\mathrm{d}x \right) \mathrm{d}y $$
-
-et
-
-$$ \int_a^b \left( \int_c^d \frac{\partial^2 f}{\partial y\partial x}\,\mathrm{d}y \right) \mathrm{d}x. $$
+$$ \int_c^d \left( \int_a^b \frac{\partial^2 f}{\partial x\partial y}\,\mathrm{d}x \right) \mathrm{d}y \text{ et } 
+   \int_a^b \left( \int_c^d \frac{\partial^2 f}{\partial y\partial x}\,\mathrm{d}y \right) \mathrm{d}x. $$
 
 ### 3.2
 
