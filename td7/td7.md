@@ -55,7 +55,7 @@ $$ \int_c^d \left( \int_a^b \frac{\partial^2 f}{\partial x\partial y}(x,y)\,\mat
 
 À l'aide du théorème de Fubini, montrer que
 
-$$ \int_c^d \left( \int_a^b \left( \frac{\partial^2 f}{\partial x\partial y}(x,y) - \frac{\partial^2 f}{\partial y\partial x(x,y)} \right) \,\mathrm{d}x \right) \mathrm{d}y = 0. $$
+$$ \int_c^d \left( \int_a^b \left( \frac{\partial^2 f}{\partial x\partial y}(x,y) - \frac{\partial^2 f}{\partial y\partial x}(x,y) \right) \,\mathrm{d}x \right) \mathrm{d}y = 0. $$
 
 Conclure.
 
