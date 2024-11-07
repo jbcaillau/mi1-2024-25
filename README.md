@@ -25,7 +25,7 @@
 
 [TD 6 - Espaces Lp](td6/td6.md)
 
-TD 7 - Fubini
+[TD 7 - Fubini](td7/td7.md)
 
 TD 8 - Transformée de Fourier
 
