@@ -48,14 +48,14 @@ $\partial^2 f/\partial y\partial x$ continues.
 
 Soient $a \leq b$ et $c \leq d$, calculer
 
-$$ \int_c^d \left( \int_a^b \frac{\partial^2 f}{\partial x\partial y}\,\mathrm{d}x \right) \mathrm{d}y \text{ et } 
-   \int_a^b \left( \int_c^d \frac{\partial^2 f}{\partial y\partial x}\,\mathrm{d}y \right) \mathrm{d}x. $$
+$$ \int_c^d \left( \int_a^b \frac{\partial^2 f}{\partial x\partial y}(x,y)\,\mathrm{d}x \right) \mathrm{d}y \quad \text{et} \quad
+   \int_a^b \left( \int_c^d \frac{\partial^2 f}{\partial y\partial x}(x,y)\,\mathrm{d}y \right) \mathrm{d}x. $$
 
 ### 3.2
 
 À l'aide du théorème de Fubini, montrer que
 
-$$ \int_c^d \left( \int_a^b \left( \frac{\partial^2 f}{\partial x\partial y} - \frac{\partial^2 f}{\partial y\partial x} \right) \,\mathrm{d}x \right) \mathrm{d}y = 0. $$
+$$ \int_c^d \left( \int_a^b \left( \frac{\partial^2 f}{\partial x\partial y}(x,y) - \frac{\partial^2 f}{\partial y\partial x(x,y)} \right) \,\mathrm{d}x \right) \mathrm{d}y = 0. $$
 
 Conclure.
 
