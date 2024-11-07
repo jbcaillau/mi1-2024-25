@@ -65,7 +65,7 @@ Conclure.
 
 Soit $f_n : X \to \mathbf{\overline{R}}$ une suite d'applications mesurables définies sur $(X,\mathscr{B},\mu)$, espace mesuré $\sigma$-fini, telle que
 
-$$ \int_X \sum_n |f_n(x)|\,\mathrm{d}x < \infty. $$
+$$ \sum_n \int_X |f_n(x)|\,\mathrm{d}x < \infty. $$
 
 Montrer qu'on a
 
