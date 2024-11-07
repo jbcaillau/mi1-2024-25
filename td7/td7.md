@@ -48,17 +48,17 @@ $\partial^2 f/\partial y\partial x$ continues.
 
 Soient $a \leq b$ et $c \leq d$, calculer
 
-$$ \int_c^d \int_a^b \frac{\partial^2 f}{\partial x\partial y}\,\mathrm{d}x \mathrm{d}y $$
+$$ \int_c^d \left( \int_a^b \frac{\partial^2 f}{\partial x\partial y}\,\mathrm{d}x \right) \mathrm{d}y $$
 
 et
 
-$$ \int_a^b \int_c^d \frac{\partial^2 f}{\partial y\partial x}\,\mathrm{d}y \mathrm{d}x. $$
+$$ \int_a^b \left( \int_c^d \frac{\partial^2 f}{\partial y\partial x}\,\mathrm{d}y \right) \mathrm{d}x. $$
 
 ### 3.2
 
 À l'aide du théorème de Fubini, montrer que
 
-$$ \int_c^d \int_a^b \frac{\partial^2 f}{\partial x\partial y} - \frac{\partial^2 f}{\partial y\partial x}\,\mathrm{d}x \mathrm{d}y = 0. $$
+$$ \int_c^d \left( \int_a^b \left( \frac{\partial^2 f}{\partial x\partial y} - \frac{\partial^2 f}{\partial y\partial x} \right) \,\mathrm{d}x \right) \mathrm{d}y = 0. $$
 
 Conclure.
 
@@ -66,7 +66,7 @@ Conclure.
 
 ### 4.1
 
-Soit $f_n : X \to \mathbf{\bar{R}}$ une suite d'applications mesurables définies sur $(X,\mathscr{B},\mu)$, espace mesuré $\sigma$-fini telle que
+Soit $f_n : X \to \mathbf{\overline{R}}$ une suite d'applications mesurables définies sur $(X,\mathscr{B},\mu)$, espace mesuré $\sigma$-fini, telle que
 
 $$ \int_X \sum_n |f_n(x)|\,\mathrm{d}x < \infty. $$
 
