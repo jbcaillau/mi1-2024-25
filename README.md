@@ -24,6 +24,7 @@
 ([corrigé](td5/td5-corr.pdf))
 
 [TD 6 - Espaces Lp](td6/td6.md)
+([corrigé](td6/td6-corr.pdf))
 
 [TD 7 - Fubini](td7/td7.md)
 
