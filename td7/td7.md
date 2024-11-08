@@ -14,7 +14,7 @@ header-includes:
 
 ## Exercice 1
 
-Soient $a$ et $b$ deux réels, $a < b$. Soit $f \in \mathscr{L}^1([a,b]^2)$.
+Soient $a$ et $b$ deux réels, $a < b$. Soit $f \in L^1([a,b]^2)$.
 
 ### 1.1
 
@@ -76,4 +76,4 @@ $$ \int_X \sum_n f_n(x)\,\mathrm{d}x =
 
 Déterminer, si elle existe, la valeur de
 
-$$ \int_0^\infty \sum_{n \geq 1} e^{-n^2 x}\,\mathrm{d}x. $$
+$$ \int_0^\infty \sum_{n \geq 1} (-1)^{n+1}e^{-n^2 x}\,\mathrm{d}x. $$
