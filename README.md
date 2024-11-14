@@ -28,7 +28,7 @@
 
 [TD 7 - Fubini](td7/td7.md)
 
-TD 8 - Transformée de Fourier
+[TD 8 - Transformée de Fourier](td8/td8.pdf)
 
 TD 9 - Convolution
 
