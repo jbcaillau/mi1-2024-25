@@ -54,4 +54,3 @@ Soit $\Lambda$ la fonction triangle,
 $$ \Lambda(x) = (1-|x|)\chi_{[-1,1]}(x),\quad x \in \mathbf{R}. $$
 
 Déterminer la transformée de Fourier de $\Lambda(2x-1)$.
-
