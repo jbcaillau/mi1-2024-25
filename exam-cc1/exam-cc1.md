@@ -67,7 +67,7 @@ $$ \int_{-\infty}^\infty x\cos(x/n)e^{-x^2}\,\mathrm{d}x,\quad n \geq 1. $$
 
 $$ f_n(x) := x\cos(x/n)e^{-x^2},\quad x \in \mathbf{R},\quad n \geq 1, $$
 
-on voit que chaque $(f_n(x))_n$ tend vers $xe^{-x^2}$ (converge simple) quand $n$ tend vers l'infini et que
+on voit que chaque $(f_n(x))_n$ tend vers $xe^{-x^2}$ (convergence simple) quand $n$ tend vers l'infini et que
 
 $$ |f_n(x)| \leq |x|e^{-x^2} $$
 
@@ -82,9 +82,9 @@ $$ \int_0^n \frac{e^{-x}\sin x\,\mathrm{d}x}{1 + \sin^2(x/n)}\,,\quad n \geq 1. 
 
 **Réponse.** Ayant posé
 
-$$ f_n(x) := \frac{e^{-x}\sin x\,\chi_{|[0,n]{x}}{1 + \sin^2(x/n)},\quad x \geq 0,\quad n \geq 1, $$
+$$ f_n(x) := \frac{e^{-x}\sin x\,\chi_{|[0,n]}(x)}{1 + \sin^2(x/n)},\quad x \geq 0,\quad n \geq 1, $$
 
-on voit que chaque $(f_n(x))_n$ tend vers $e^{-x}\sin x$ (converge simple) quand $n$ tend vers l'infini et que
+on voit que chaque $(f_n(x))_n$ tend vers $e^{-x}\sin x$ (convergence simple) quand $n$ tend vers l'infini et que
 
 $$ |f_n(x)| \leq e^{-x} $$
 
