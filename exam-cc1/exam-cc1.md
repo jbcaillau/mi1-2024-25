@@ -39,7 +39,7 @@ $$ \tilde{\mathscr{A}} := \lbrace [0,1], ]1,2] \rbrace $$
 
 sont égales.
 
-**Réponse.** Comme $]1,2] = [0,2] \cap \complement [0,1] \in \mathscr{B}(mathscr{A})$,
+**Réponse.** Comme $]1,2] = [0,2] \cap \complement [0,1] \in \mathscr{B}(\mathscr{A})$,
 on a $\tilde{\mathscr{A}} \subset \mathscr{B}(\mathscr{A})$,
 donc $\mathscr{B}(\tilde{\mathscr{A}}) \subset \mathscr{B}(\mathscr{A})$.
 Réciproquement, $[0,2] = [0,1] \cup ]1,2] \in \mathscr{B}(\tilde{\mathscr{A}})$,
