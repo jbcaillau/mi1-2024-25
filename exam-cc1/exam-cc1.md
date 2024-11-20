@@ -67,7 +67,7 @@ $$ \int_{-\infty}^\infty x\cos(x/n)e^{-x^2}\,\mathrm{d}x,\quad n \geq 1. $$
 
 $$ f_n(x) := x\cos(x/n)e^{-x^2},\quad x \in \mathbf{R},\quad n \geq 1, $$
 
-on voit que chaque $(f_n(x))_n$ tend vers $xe^{-x^2}$ (convergence simple) quand $n$ tend vers l'infini et que
+on voit que chaque $f_n(x)$ tend vers $xe^{-x^2}$ (convergence simple) quand $n$ tend vers l'infini et que
 
 $$ |f_n(x)| \leq |x|e^{-x^2} $$
 
@@ -84,7 +84,7 @@ $$ \int_0^n \frac{e^{-x}\sin x\,\mathrm{d}x}{1 + \sin^2(x/n)}\,,\quad n \geq 1. 
 
 $$ f_n(x) := \frac{e^{-x}\sin x\,\chi_{|[0,n]}(x)}{1 + \sin^2(x/n)},\quad x \geq 0,\quad n \geq 1, $$
 
-on voit que chaque $(f_n(x))_n$ tend vers $e^{-x}\sin x$ (convergence simple) quand $n$ tend vers l'infini et que
+on voit que chaque $f_n(x)$ tend vers $e^{-x}\sin x$ (convergence simple) quand $n$ tend vers l'infini et que
 
 $$ |f_n(x)| \leq e^{-x} $$
 
@@ -101,7 +101,7 @@ $$ \int_0^n \frac{n\,\mathrm{d}x}{n(1 + \cos^2 x) + 1}\,,\quad n \geq 1. $$
 
 $$ f_n(x) := \frac{1}{1 + \cos^2 x + 1/n}\chi_{|[0,n]{x}},\quad x \geq 0,\quad n \geq 1, $$
 
-on voit que cette suite de fonctions mesurables et positives est croissante, et que chaque $(f_n(x))_n$ tend
+on voit que cette suite de fonctions mesurables et positives est croissante, et que chaque $f_n(x)$ tend
 vers $1/(1 + \cos^2 x)$ quand $n$ tend vers l'infini. Par CV monotone, la limite est donc $+\infty$ puisque
 
 $$ \int_0^\infty \frac{\mathrm{d}x}{1 + \cos^2 x} \geq \int_0^\infty \frac{\mathrm{d}x}{2} = \infty. $$
