@@ -90,7 +90,7 @@ $$ |f_n(x)| \leq e^{-x} $$
 
 dont le second membre est une application intégrable sur $\mathbf{R_+}$. Par CV dominée, la limite vaut donc
 
-$$ \int_0^\infty e^{-x}\sin x\,\mathrm{d}x = \frac{1}{2}. $$
+$$ \int_0^\infty e^{-x}\sin x\,\mathrm{d}x = \frac{1}{2}\cdot $$
 
 ## 4.3
 Déterminer, si elle existe, la limite quand $n$ tend vers l'infini de la suite
@@ -99,7 +99,7 @@ $$ \int_0^n \frac{n\,\mathrm{d}x}{n(1 + \cos^2 x) + 1}\,,\quad n \geq 1. $$
 
 **Réponse.** Ayant posé
 
-$$ f_n(x) := \frac{1}{1 + \cos^2 x + 1/n}\chi_{|[0,n]{x}},\quad x \geq 0,\quad n \geq 1, $$
+$$ f_n(x) := \frac{1}{1 + \cos^2 x + 1/n}\chi_{|[0,n]}(x),\quad x \geq 0,\quad n \geq 1, $$
 
 on voit que cette suite de fonctions mesurables et positives est croissante, et que chaque $f_n(x)$ tend
 vers $1/(1 + \cos^2 x)$ quand $n$ tend vers l'infini. Par CV monotone, la limite est donc $+\infty$ puisque
