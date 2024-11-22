@@ -20,12 +20,37 @@ Montrer que l'intégrale impropre ci-dessous est convergente et déterminer sa v
 
 $$ \int_0^1 \ln x\,\mathrm{d}x. $$
 
+**Réponse.** $\ln$ est singulière en 0, continue sur $]0,1]$, on calcule $\lim_{A\to 0}\int_A^1\ln(x)\,\mathrm{d}x$. Par intégration par partie on obtient:
+
+$$\int_A^1\ln(x)\,\mathrm{d}x=\left[x\ln x-x\right]_A^1=-1-A\ln A-A\xrightarrow[A\to 0]{} -1.$$
+
+L'intégrale converge et vaut -1.
+
+
 # Exercice 2 (4 points)
 Calculer
 
 $$ \int_D \frac{x\ \mathrm{d}x\mathrm{d}y}{y+x^2} $$
 
 où $D := \lbrace (x,y) \in \mathbf{R}^2\ |\ 0 \leq x \leq 1,\ 1 \leq y \leq 3 \rbrace$.
+
+
+**Réponse.** $D$ est un domaine compact, $f(x,y)= \frac{x\ }{y+x^2} $ est continue sur $D$, donc bornée et  intégrable.
+Par conséquent the théorème de Fubini implique
+
+$$ \int_D \frac{x\ \mathrm{d}x\mathrm{d}y}{y+x^2} =\int_1^3\left(\int_0^1 \frac{x\ \mathrm{d}x}{y+x^2}\right)\mathrm{d}y.$$
+
+Or
+
+$$ \int_0^1 \frac{x\ \mathrm{d}x}{y+x^2} = \left[\frac{1}{2}\ln(y+x^2)\right]_0^1=\frac{1}{2}\left(\ln(1+y)-\ln(y)\right).$$
+
+Donc 
+
+$$ \int_D \frac{x\ \mathrm{d}x\mathrm{d}y}{y+x^2} =
+\frac{1}{2}\left[(1+y)\ln(1+y)-y\ln(y)\right]_1^3 = 
+\frac{1}{2}\left(4 \ln(4)-3 \ln(3)-2\ln(2)\right) =
+3\ln(2)-\frac{3}{2}\ln(3).
+$$
 
 # Exercice 3 (6 points)
 On considère la famille de parties de $[0,3]$ suivante :
