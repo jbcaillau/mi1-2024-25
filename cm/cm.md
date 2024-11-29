@@ -84,3 +84,12 @@ $\hat{f}(\xi):=\int_{\mathbf{R}} f(x)e^{-2i\pi\xi x}\,\mathrm{d}x$
 - prop. : commutativité
 - prop. : $\widehat{f * g} = \hat{f} * \hat{g}$
 - prop. : convolution $L^p(\mathbf{R}) * L^q(\mathbf{R})$ avec $1/p+1/q=1+1/r$
+
+## Ch. 6 - (Très courte) Introduction aux probas
+- th. déf. : mesure image
+- prop. : intégration par rapport à une mesure image
+- th. déf. : mesure à densité
+- prop. : intégration par rapport à une mesure à densité
+- ex. fondamental : espace probabilisé $(\Omega,\mathsrc{B},P)$ et variable aléatoire
+- déf. : espérance d'une v.a. intégrable
+- déf. : variance d'une v.a. de carré sommable (et $\text{Var}(X) = E(X^2) - E^2(X)$) 
