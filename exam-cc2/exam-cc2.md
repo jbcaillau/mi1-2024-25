@@ -6,180 +6,92 @@ header-includes:
 
 ## MAM3
 
-# Commande optimale
+# Mathématiques de l'ingénieur.e 1
 # 2024-25
-# Exam CC no. 1
+# Exam CC no. 2
 
-**Durée 2H00. Documents autorisés. Tous les exercices sont indépendants.
+**Durée 2H00. Documents non autorisés. Tous les exercices sont indépendants.
 Le barème prévisionnel est indiqué pour chaque exercice.**
 
+**Rendre sur des copies séparées les exercices 1 et 2 d'une part, 3 et 4 d'autre part.** 
 
-## Exercice 1 (7 points)
+# Exercice 1 (6 points)
 
-On considère le problème à temps final $t_f > 0$ fixé
+## 1.1
 
-$$ \int_0^{t_f} (x_2^2(t)+u_1^2(t)+u_2^2(t))\,\mathrm{d}t \to \min $$
+Déterminer, si elle existe, la limite quand $n$ tend vers l'infini de la suite
 
-pour la dynamique
+$$ \int_{-\infty}^\infty |x|\cos((x+1)/n)e^{-x^2}\,\mathrm{d}x,\quad n \geq 1. $$
 
-$$ \dot{x}_1(t) =-x_2(t)+u_2(t),\quad
-   \dot{x}_2(t) = x_1(t)-u_1(t),\quad t \in [0,t_f], $$ 
-   
-où $x(t)$ et $u(t)$ sont dans $\mathbf{R}^2$, où $x(0)=x_0$ est fixé, et où la condition terminale est
+## 1.2
 
-$$ x_1(t_f) + x_2(t_f) = 1. $$
+Déterminer, si elle existe, la limite quand $n$ tend vers l'infini de la suite
 
-### 1.1
+$$ \int_0^n \frac{n \mathrm{d}x}{n + x^2}\,,\quad n \geq 1. $$
 
-Donner le hamiltonien du problème, en fonction de l'état $x$, du contrôle $u$, de l'adjoint $p$ et du scalaire $p^0$.
+## 1.3
 
-### 1.2
+Déterminer, si elle existe, la limite quand $n$ tend vers l'infini de la suite
 
-Supposer, par l'absurde que $p^0 = 0$, et montrer qu'alors $p$ doit être identiquement nul. Conclure.
+$$ \int_e^\infty \frac{n \sin(x/n)}{x^2 \ln^2 x}\,\mathrm{d}x,\quad n \geq 1. $$
 
-### 1.3
+# Exercice 2 (5 points)
 
-On pose $p^0 =-1/2$ pour la suite. Déterminer le système adjoint.
+## 2.1
 
-### 1.4
-Écrire les conditions de transversalité.
+Montrer que la fonction
 
-### 1.5
+$$  F(t) := \int_0^\infty \frac{\cos(tx)e^{-x}}{1+x^2}\,\mathrm{d}x $$
 
-Déterminer le contrôle en fonction de l'état et de l'état adjoint à l'aide de la condition de maximisation.
+est bien définie pour $t \in \mathbf{R}$.
 
-### 1.6
+## 2.2
 
-Injecter ce contrôle dans le hamiltonien pour déterminer le hamiltonien maximisé (fonction de l'état et de l'état adjoint seulement) et compléter le code ci-dessous.
+Montrer que la fonction $F$ est deux fois dérivable, et donner les expressions de $F'$ et $F''$.
 
-```julia
-# Hamiltonian
-function h(t, x, p)
-    r = 0.0 # **** TO BE UPDATED ****
-    return r
-end
+## 2.3
 
-f = Flow(Hamiltonian(h))
+En déduire que $F$ vérifie l'équation différentielle
 
-# Shooting function
-function shoot(p0)
-    xf, pf = f(t0, x0, p0, tf)
-    s = zeros(2) # **** TO BE UPDATED ****
-    return s
-end
-```
+$$ F''(t) - F(t) = G(t),\quad t \in \mathbf{R}, $$
 
-## Exercice 2 (10 points)
+avec $G$ une fonction dont on donnera une expression explicite.
 
-On considère le problème de navigation en temps minimal 
+# Exercice 3 (4 points)
 
-$$ \dot{x}(t)=w+\cos\theta(t),\quad
-   \dot{y}(t)=\sin\theta(t),\quad
-   \dot{\theta}(t)=u(t),\quad t \in [0,t_f], $$
-   
-où le vecteur position $(x(t),y(t))$ appartient à $\mathbf{R}^2$, l'argument de la
-vitesse $\theta(t)$ à $\mathbf{R}$, et où $w \in \mathbf{R}$ est une constante fixée.
-On ajoute la contrainte $|u(t)| \leq 1$ ainsi que des conditions aux limites
+## 3.1
 
-$$(x(0),y(0),\theta(0)) = (x_0,y_0,\theta_0),\quad
-   (x(t_f),y(t_f),\theta(t_f)) = (x_f,y_f,\theta_f). $$
-   
-### 2.1
+Soient $f \in L^p(X,\mathscr{B},\mu)$ et $g \in L^q(X,\mathscr{B},\mu)$, avec $1/p + 1/q = 1/r$ et $p$, $q$, $r$ dans
+$]0,\infty[$, $r \geq 1$. Montrer que $fg$ appartient à $L^r(X,\mathscr{B},\mu)$ et que
 
-Montrer que si $|w| \geq 1$, le problème n'admet pas nécessairement
-de solution.
+$$ \|fg\|_r \leq \|f\|_p \|g\|_q. $$
 
-### 2.2
+[Indication : noter que $1/(p/r) + 1/(q/r) = 1$, et que $f^r$ est dans $L^{p/r}$. ]
 
-On suppose désormais $w \in [0,1[$, et on note $p=(p_x,p_y,p_\theta)$ l'état adjoint. Écrire le hamiltonien du problème en fonction de l'état, du contrôle, de $p$ et de $p^0$.
+## 3.2
 
-### 2.3
+Soient $f_1 \in L^{p_1}(X,\mathscr{B},\mu)$, ..., $f_n \in L^{p_n}(X,\mathscr{B},\mu)$, avec $1/p_1 + \cdots + 1/{p_n} = 1/r$ et $p_1,\dots,p_n$,
+$r$ dans $]0,\infty[$, $r \geq 1$. Montrer que $f_1 \cdots f_n$ appartient à $L^r(X,\mathscr{B},\mu)$ et que
 
-Écrire le système différentiel vérifié par l'état adjoint et montrer que $p_x$ et $p_y$ sont constants.
+$$ \|f_1 \cdots f_n\|_r \leq \|f_1\|_{p_1} \cdots \|f_n\|_{p_n}. $$
 
-### 2.4
 
-Appliquer la condition de maximisation pour déterminer les contrôles optimaux.
+# Exercice 4 (5 points)
 
-### 2.5
+## 4.1
 
-En déduire que, le long d'une extrémale optimale, on a
+Soient $\beta > \alpha > 0$. Monter que l'intégrale
 
-$$ 0 = p^0+p_x w+p_x\cos\theta(t)+p_y\sin\theta(t)+|p_\theta(t)|,\quad t \in [0,t_f]. $$ 
+$$ I := \int_0^\infty \frac{e^{-\alpha x} - e^{-\beta x}}{x}\,\mathrm{d}x $$
 
-### 2.6
+est bien définie.
 
-On suppose désormais $(p_x,p_y) \neq (0,0)$ et on pose $(p_x,p_y)=(\cos\psi,\sin\psi)$. Montrer que
+## 4.2
 
-$$ |p_\theta(t)|-\gamma =-\cos(\theta(t)-\psi,\quad \dot{p}_\theta(t) = \sin(\theta(t)-\psi), $$
+Montrer que
 
-où $\gamma$ est une constante que l'on précisera.
+$$ I := \int_0^\infty (\int_\alpha^\beta e^{-tx}\,\mathrm{d}t)\,\mathrm{d}x. $$
 
-### 2.7
+## 4.3
 
-En déduire que $(p_\theta(t),\dot{p}_\theta(t))$ appartient à un
-ensemble que l'on dessinera pour $\gamma > 1$.
-
-### 2.8
-
-Dans le cas $\gamma > 1$, montrer que le contrôle est constant, égal à $\pm 1$.
-
-### 2.9
-
-Dans le cas où le contrôle est constant égal à $+1$, donner
-l'expression de $x(t)$, $y(t)$ et $\theta(t)$.
-
-## Exercice 3 (3 points)
-
-On considère la portion de code suivant, extrait de l'application d'une méthode directe au problème de navigation :
-
-```julia
-# Objective
-@objective(sys, Min, tau[1]+tau[2]+tau[3])
-
-# Constraints 
-@constraints(sys, begin
-    x[1, 1] == x0
-    y[1, 1] == y0
-    th[1, 1] == th0
-    x[2, 1] == x[1, P]
-    y[2, 1] == y[1, P]
-    th[2, 1] == th[1, P]
-    x[3, 1] == x[2, P]
-    y[3, 1] == y[2, P]
-    th[3, 1] == th[2, P]
-    x[3, P] == xf
-    y[3, P] == yf
-    th[3, P] == thf
-    end)
-
-# Dynamics: Crank-Nicolson scheme
-for j in 1 : P-1
-    @NLconstraints(sys, begin
-    # x' = w + cos(theta)
-    x[1, j+1] == x[1, j] + 0.5 * tau[1]*Dt * ( w + cos(th[1, j]) + w + cos(th[1, j+1]) )
-    x[2, j+1] == x[2, j] + 0.5 * tau[2]*Dt * ( w + cos(th[2, j]) + w + cos(th[2, j+1]) )
-    x[3, j+1] == x[3, j] + 0.5 * tau[3]*Dt * ( w + cos(th[3, j]) + w + cos(th[3, j+1]) )
-    # y' = sin(theta) 
-    y[1, j+1] == y[1, j] + 0.5 * tau[1]*Dt * ( sin(th[1, j]) + sin(th[1, j+1]) )
-    y[2, j+1] == y[2, j] + 0.5 * tau[2]*Dt * ( sin(th[2, j]) + sin(th[2, j+1]) )
-    y[3, j+1] == y[3, j] + 0.5 * tau[3]*Dt * ( sin(th[3, j]) + sin(th[3, j+1]) )
-    # theta' = u
-    th[1, j+1] == th[1, j] + tau[1]*Dt * u[1]
-    th[2, j+1] == th[2, j] + tau[2]*Dt * u[2]
-    th[3, j+1] == th[3, j] + tau[3]*Dt * u[3]
-    end)
-end
-```
-
-### 3.1
-
-Indiquer la portion de code traduisant les conditions de jonction entre le premier et le deuxième arc.
-
-### 3.2
-
-Comment modifier ce code si le courant est dirigé non pas selon $(Ox)$ mais selon $(Oy)$ ? 
-
-### 3.3
-
-Comment modifier ce code si on passe d'une solution comptant $3$ arcs à une solution à $2$ arcs ? 
+En déduire $I$.
