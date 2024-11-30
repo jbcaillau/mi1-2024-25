@@ -92,4 +92,6 @@ $\hat{f}(\xi):=\int_{\mathbf{R}} f(x)e^{-2i\pi\xi x}\,\mathrm{d}x$
 - prop. : intégration par rapport à une mesure à densité
 - ex. fondamental : espace probabilisé $(\Omega,\mathscr{B},P)$ et variable aléatoire
 - déf. : espérance d'une v.a. intégrable
-- déf. : variance d'une v.a. de carré sommable, et $\text{Var}(X) = E(X^2) - E^2(X)$ 
+- déf. : variance d'une v.a. de carré sommable, et $\text{Var}(X) = E(X^2) - E^2(X)$
+- déf. : densité jointe, densité marginale (Fubini)
+- ex. : loi de $Y = g(X)$, $X$ v.a. (changement de variable)
