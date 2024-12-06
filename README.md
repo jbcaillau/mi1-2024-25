@@ -31,9 +31,9 @@
 
 [TD 8 - Transformée de Fourier](td8/td8.md)
 
-TD 9 - Convolution
+[TD 9 - Convolution](td9/td9.md)
 
-TD 10 - Équation de la chaleur
+[TD 10 - Équation de la chaleur](td10/td10.md)
 
 [Exam CC no. 1](exam-cc1/exam-cc1.md)
 
