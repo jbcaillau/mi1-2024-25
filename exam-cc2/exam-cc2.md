@@ -27,7 +27,7 @@ $$ \int_{-\infty}^\infty |x|\cos((x+1)/n)e^{-x^2}\,\mathrm{d}x,\quad n \geq 1. $
 
 Par ailleurs $|f_n|\leq f$ sur $\mathbf{R}$. Comme 
 
-$$ \int_{\mathbf{R}} f(x)\mathrm{d}x = 2 \int_0^\infty x e^{-x^2} \mathrm{d}x = 2 \lim_{A\to \infty}\left[ -\frac{e^{-x^2}}{2} \right]_0^A=1, $$
+$$ \int_{\mathbf{R}} f(x)\mathrm{d}x = 2 \int_0^\infty x e^{-x^2} \mathrm{d}x = 2 \left[ -\frac{e^{-x^2}}{2} \right]_0^\infty=1, $$
 
 on a $f\in L^1(\mathbf{R})$ (où on a employé la parité de $f$). Donc par le théorème de convergence dominée,
 
@@ -53,6 +53,12 @@ Déterminer, si elle existe, la limite quand $n$ tend vers l'infini de la suite
 $$ \int_e^\infty \frac{n \sin(x/n)}{x^2 \ln^2 x}\,\mathrm{d}x,\quad n \geq 1. $$
 
 **Réponse.** Pour tout $x\in [e,\infty[$, on note  $f_n(x)=\frac{n \sin(x/n)}{x^2 \ln^2 x}$. On remarque en premier lieu que pour to $x>0$, $\lim_{n\to \infty} \frac{\sin(x/n)}{x/n}=1$ et $\frac{\sin(x/n)}{x/n}\leq 1$. 
+
+Donc pour tout $x\in [e,\infty[$, $\lim_{n\to \infty} f_n(x)=\frac{1}{x \ln^2(x)}=:f(x)$ et $|f_n(x)|\leq f(x)$. Par ailleurs, $f\in L^1([e,\infty[)$, par exemple car c'est une intégrale de Bertrand convergente (ou se prouve par le calcul ci-dessous).
+
+Par le théorème de convergence dominée,
+
+$$ \lim_{n\to \infty} \int_e^\infty f_n(x) \mathrm{d}x=\int_e^\infty f(x)\mathrm{d}x = \left[-\frac{1}{\ln x}\right]_e^\infty=1 $$ 
 
 # Exercice 2 (5 points)
 
