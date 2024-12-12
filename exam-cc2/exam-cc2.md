@@ -23,17 +23,36 @@ Déterminer, si elle existe, la limite quand $n$ tend vers l'infini de la suite
 
 $$ \int_{-\infty}^\infty |x|\cos((x+1)/n)e^{-x^2}\,\mathrm{d}x,\quad n \geq 1. $$
 
+**Réponse.** Pour tout $x\in \mathbf{R}$, soit $f_n(x)=|x|\cos((x+1)/n)e^{-x^2}$. Pour tout $x\in \mathbf{R}$, on a $\lim_{n\to \infty} f_n(x)=|x|e^{-x^2}=:f(x)$.
+
+Par ailleurs $|f_n|\leq f$ sur $\mathbf{R}$. Comme 
+
+$$ \int_{\mathbf{R}} f(x)\mathrm{d}x = 2 \int_0^\infty x e^{-x^2} \mathrm{d}x = 2 \lim_{A\to \infty}\left[ -\frac{e^{-x^2}}{2} \right]_0^A=1, $$
+
+on a $f\in L^1(\mathbf{R})$ (où on a employé la parité de $f$). Donc par le théorème de convergence dominée,
+
+$$ \lim_{n\to \infty} \int_{\mathbf{R}} f_n(x)\mathrm{d}x = \int_{\mathbf{R}} f(x)\mathrm{d}x = 1. $$
 ## 1.2
 
 Déterminer, si elle existe, la limite quand $n$ tend vers l'infini de la suite
 
 $$ \int_0^n \frac{n \mathrm{d}x}{n + x^2}\,,\quad n \geq 1. $$
 
+**Réponse.** Pour tout $x\in \mathbf{R}_+$, on note  $f_n(x)=\frac{n}{n + x^2} {\chi} _{[0,n]}$. Comme $\frac{x^2}{n}\geq \frac{x^2}{n+1}$ on en déduit que 
+
+$$ \frac{1}{1+\frac{x^2}{n}} \leq \frac{1}{1+\frac{x^2}{n+1}}. $$
+
+Puis de ${\chi} _{[0,n]} \leq {\chi} _{[0,n+1]}$ on déduit que $f_n\leq f _{n+1}$ sur $\mathbf{R} _+$. Enfin, on a  $\lim _{n\to \infty} f_n(x)=1$ donc par le théorème de convergence monotone,
+
+$$ \lim _{n\to \infty} \int_0^n \frac{n \mathrm{d}x}{n + x^2}=\int_0^\infty \mathrm{d}x = \infty. $$ 
+
 ## 1.3
 
 Déterminer, si elle existe, la limite quand $n$ tend vers l'infini de la suite
 
 $$ \int_e^\infty \frac{n \sin(x/n)}{x^2 \ln^2 x}\,\mathrm{d}x,\quad n \geq 1. $$
+
+**Réponse.** Pour tout $x\in [e,\infty[$, on note  $f_n(x)=\frac{n \sin(x/n)}{x^2 \ln^2 x}$. On remarque en premier lieu que pour to $x>0$, $\lim_{n\to \infty} \frac{\sin(x/n)}{x/n}=1$ et $\frac{\sin(x/n)}{x/n}\leq 1$. 
 
 # Exercice 2 (5 points)
 
