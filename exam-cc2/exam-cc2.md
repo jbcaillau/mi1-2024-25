@@ -111,6 +111,14 @@ $$ \|fg\|_r \leq \|f\|_p \|g\|_q. $$
 
 [Indication : noter que $1/(p/r) + 1/(q/r) = 1$, et que $f^r$ est dans $L^{p/r}$. ]
 
+**Réponse.** Par hypothèse, $f^r$ est dans $L^{p/r}$ et $g^r$ est dans $L^{q/r}$ : comme $1/(p/r) + 1/(q/r) = 1$, on peut appliquer Hölder pour conclure que $f^r g^r$ est dans $L^1$ et que
+
+$$ \|f^r g^r\|_1 \leq \|f^r\|_{p/r} \|g^r\|_{q/r} $$
+
+et donc que (prendre la puissance $1/r$ des deux membres)
+
+$$ \|fg\|_r \leq \|f\|_{p} \|g\|_{q}. $$
+
 ## 3.2
 
 Soient $f_1 \in L^{p_1}(X,\mathscr{B},\mu)$, ..., $f_n \in L^{p_n}(X,\mathscr{B},\mu)$, avec $1/p_1 + \cdots + 1/{p_n} = 1/r$ et $p_1,\dots,p_n$,
@@ -118,6 +126,7 @@ $r$ dans $]0,\infty[$, $r \geq 1$. Montrer que $f_1 \cdots f_n$ appartient à $L
 
 $$ \|f_1 \cdots f_n\|_r \leq \|f_1\|_{p_1} \cdots \|f_n\|_{p_n}. $$
 
+**Réponse.** La relation est vraie pour $n = 2$ d'après la question précédente. Supposons qu'elle est vraie au rang $n \geq 2$, et montrons, pour conclure par récurrence, qu'elle est alors vraie au rang $n + 1$. Soient $f_1,\dots,f_{n+1}$ vérifiant les hypothèses indiquées pour $p_1,\dots,p_{n+1}$ des réels dont la somme des inverses vaut $1/r$. Soit $s$ tel quel $1/s$ vaut $1/p_1 + \cdots 1/p_n$ ; par hypothèse de récurrence, $f_1 \cdots f_n$ appartient à $L^s$, et la question précédente appliquée à ce produit et à $f_{n+1}$ donne le résultat voulu puisque $1/s + 1/p_{n+1} = 1/r$.
 
 # Exercice 4 (5 points)
 
@@ -129,12 +138,18 @@ $$ I := \int_0^\infty \frac{e^{-\alpha x} - e^{-\beta x}}{x}\,\mathrm{d}x $$
 
 est bien définie.
 
+**Réponse.** 
+
 ## 4.2
 
 Montrer que
 
 $$ I := \int_0^\infty (\int_\alpha^\beta e^{-tx}\,\mathrm{d}t)\,\mathrm{d}x. $$
 
+**Réponse.** 
+
 ## 4.3
 
 En déduire $I$.
+
+**Réponse.** 
