@@ -70,9 +70,23 @@ $$  F(t) := \int_0^\infty \frac{\cos(tx)e^{-x}}{1+x^2}\,\mathrm{d}x $$
 
 est bien définie pour $t \in \mathbf{R}$.
 
+**Réponse.** Pour $t\in \mathbf{R}$ et $x\in [0,\infty[$, on note $f(t,x)=\frac{\cos(tx)e^{-x}}{1+x^2}$. Pour tout $t\in \mathbf{R}$ fixé, $f(t,x)\leq e^{-x}=:g(x)$. Or $g\in L^1(\mathbf{R}_+)$ donc $f(t,\cdot)\in L^1(\mathbf{R} _+)$ pour tout $t$ et $F(t)$ est bien définie.
+
 ## 2.2
 
 Montrer que la fonction $F$ est deux fois dérivable, et donner les expressions de $F'$ et $F''$.
+
+**Réponse.** Pour tout $t\in \mathbf{R}$, $x>0$, $\frac{\partial}{\partial t} f(t,x)= - \frac{x \sin(tx)e^{-x}}{1+x^2}$ et $\left|\frac{\partial}{\partial t} f(t,x)\right|\leq x e^{-x}$. Par croissance comparée, $x\mapsto x e^{-x}$ est encore de classe $L^1(\mathbf{R} _+)$.
+
+Par le théorème de dérivation des intégrales à paramètre, $F(t)$ est dérivable sur $\mathbf{R}$ de dérivée 
+
+$$ F'(t) = - \int_0^\infty \frac{x \sin(tx)e^{-x}}{1+x^2}\,\mathrm{d}x. $$
+
+Le même argument s'applique pour $F''$. $\frac{\partial^2}{\partial t^2} f(t,x)= - \frac{x^2 \cos(tx)e^{-x}}{1+x^2}$ et $\left|\frac{\partial^2}{\partial t^2} f(t,x)\right|\leq x^2 e^{-x}$. Par croissance comparée, $x\mapsto x^2 e^{-x}$ est de classe $L^1(\mathbf{R} _+)$.
+
+Par le théorème de dérivation des intégrales à paramètre, $F'(t)$ est dérivable sur $\mathbf{R}$ de dérivée 
+
+$$ F''(t) = - \int_0^\infty \frac{x^2 \cos(tx)e^{-x}}{1+x^2}\,\mathrm{d}x. $$
 
 ## 2.3
 
@@ -81,6 +95,10 @@ En déduire que $F$ vérifie l'équation différentielle
 $$ F''(t) - F(t) = G(t),\quad t \in \mathbf{R}, $$
 
 avec $G$ une fonction dont on donnera une expression explicite.
+
+**Réponse.** On additionne simplement les deux intégrales obtenues:
+
+$$ F''(t) - F(t) =  -\int_0^\infty \frac{(1+x^2) \cos(tx)e^{-x}}{1+x^2}\,\mathrm{d}x=-\int_0^\infty \cos(tx)e^{-x} \,\mathrm{d}x Re\left(\left[-\frac{e^{it x-x}}{it-1}\right]_0^\infty\right)= Re\left(\frac{1}{it-1}\right) = - \frac{1}{1+t^2}.$$ 
 
 # Exercice 3 (4 points)
 
