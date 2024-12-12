@@ -98,7 +98,7 @@ avec $G$ une fonction dont on donnera une expression explicite.
 
 **Réponse.** On additionne simplement les deux intégrales obtenues:
 
-$$ F''(t) - F(t) =  -\int_0^\infty \frac{(1+x^2) \cos(tx)e^{-x}}{1+x^2}\,\mathrm{d}x=-\int_0^\infty \cos(tx)e^{-x} \,\mathrm{d}x Re\left(\left[-\frac{e^{it x-x}}{it-1}\right]_0^\infty\right)= Re\left(\frac{1}{it-1}\right) = - \frac{1}{1+t^2}.$$ 
+$$ F''(t) - F(t) =  -\int_0^\infty \frac{(1+x^2) \cos(tx)e^{-x}}{1+x^2}\,\mathrm{d}x=-\int_0^\infty \cos(tx)e^{-x} \,\mathrm{d}x = Re\left(\left[-\frac{e^{it x-x}}{it-1}\right]_0^\infty\right)= Re\left(\frac{1}{it-1}\right) = - \frac{1}{1+t^2}.$$ 
 
 # Exercice 3 (4 points)
 
