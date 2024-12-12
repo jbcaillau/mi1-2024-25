@@ -66,7 +66,7 @@ $\mu(B\setminus A)=\mu(B)-\mu(A)$ si $A \subset B$ et $\mu(A) < \infty$, continu
 - déf. prop. : mesure produit (cas $\sigma$-fini)
 - th. de Tonelli
 - th. de Fubini
-- complétion d'une mesure produit
+- complétion d'une mesure produit (cas de la mesure de Lebesgue)
 
 ## Ch. 5 - Transformée de Fourier
 
