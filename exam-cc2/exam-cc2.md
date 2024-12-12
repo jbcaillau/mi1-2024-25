@@ -104,14 +104,13 @@ $$ F''(t) - F(t) =  -\int_0^\infty \frac{(1+x^2) \cos(tx)e^{-x}}{1+x^2}\,\mathrm
 
 ## 3.1
 
-Soient $f \in L^p(X,\mathscr{B},\mu)$ et $g \in L^q(X,\mathscr{B},\mu)$, avec $1/p + 1/q = 1/r$ et $p$, $q$, $r$ dans
-$]0,\infty[$, $r \geq 1$. Montrer que $fg$ appartient à $L^r(X,\mathscr{B},\mu)$ et que
+Soient $f \in L^p(X,\mathscr{B},\mu)$ et $g \in L^q(X,\mathscr{B},\mu)$, avec $1/p + 1/q = 1/r$ et $p$, $q$, $r$ dans $[1,\infty[$. Montrer que $fg$ appartient à $L^r(X,\mathscr{B},\mu)$ et que
 
 $$ \|fg\|_r \leq \|f\|_p \|g\|_q. $$
 
-[Indication : noter que $1/(p/r) + 1/(q/r) = 1$, et que $f^r$ est dans $L^{p/r}$. ]
+[**Indication** : noter que $1/(p/r) + 1/(q/r) = 1$, et que $f^r$ est dans $L^{p/r}$. ]
 
-**Réponse.** Par hypothèse, $f^r$ est dans $L^{p/r}$ et $g^r$ est dans $L^{q/r}$ : comme $1/(p/r) + 1/(q/r) = 1$, on peut appliquer Hölder pour conclure que $f^r g^r$ est dans $L^1$ et que
+**Réponse.** Par hypothèse, $f^r$ est dans $L^{p/r}$ et $g^r$ est dans $L^{q/r}$ (noter que $p/r$ et $q/r$ sont nécessairement supérieurs ou égaux à $1$): comme $1/(p/r) + 1/(q/r) = 1$, on peut appliquer Hölder pour conclure que $f^r g^r$ est dans $L^1$ et que
 
 $$ \|f^r g^r\|_1 \leq \|f^r\|_{p/r} \|g^r\|_{q/r} $$
 
@@ -121,8 +120,7 @@ $$ \|fg\|_r \leq \|f\|_{p} \|g\|_{q}. $$
 
 ## 3.2
 
-Soient $f_1 \in L^{p_1}(X,\mathscr{B},\mu)$, ..., $f_n \in L^{p_n}(X,\mathscr{B},\mu)$, avec $1/p_1 + \cdots + 1/{p_n} = 1/r$ et $p_1,\dots,p_n$,
-$r$ dans $]0,\infty[$, $r \geq 1$. Montrer que $f_1 \cdots f_n$ appartient à $L^r(X,\mathscr{B},\mu)$ et que
+Soient $f_1 \in L^{p_1}(X,\mathscr{B},\mu)$, ..., $f_n \in L^{p_n}(X,\mathscr{B},\mu)$, avec $1/p_1 + \cdots + 1/{p_n} = 1/r$ et $p_1,\dots,p_n$, $r$ dans $[1,\infty[$. Montrer que $f_1 \cdots f_n$ appartient à $L^r(X,\mathscr{B},\mu)$ et que
 
 $$ \|f_1 \cdots f_n\|_r \leq \|f_1\|_{p_1} \cdots \|f_n\|_{p_n}. $$
 
@@ -138,7 +136,7 @@ $$ I := \int_0^\infty \frac{e^{-\alpha x} - e^{-\beta x}}{x}\,\mathrm{d}x $$
 
 est bien définie.
 
-**Réponse.** 
+**Réponse.** L'intégrande est continu donc mesurable, et positif puisque $\alpha < \beta$ : l'intégrale est donc bien définie.
 
 ## 4.2
 
@@ -146,10 +144,18 @@ Montrer que
 
 $$ I := \int_0^\infty (\int_\alpha^\beta e^{-tx}\,\mathrm{d}t)\,\mathrm{d}x. $$
 
-**Réponse.** 
+**Réponse.** Pour tout $x$ positif,
+
+$$ \int_\alpha^\beta e^{-tx}\,\mathrm{d}t = \frac{e^{-\alpha x} - e^{-\beta x}}{x} \cdot $$
 
 ## 4.3
 
 En déduire $I$.
 
-**Réponse.** 
+**Réponse.** La fonction $(t,x) \mapsto e^{-tx}$ est mesurable et positive, donc Tonelli implique que
+
+$$ \begin{align} I &= \int_0^\infty (\int_\alpha^\beta e^{-tx}\,\mathrm{d}t)\,\mathrm{d}x,\\
+                   &= \int_\alpha^\beta (\int_0^\infty e^{-tx}\,\mathrm{d}x)\,\mathrm{d}t,\\
+                   &= \int_\alpha^\beta \frac{1}{t}\,\mathrm{d}t,\\
+                   &= \ln\beta - \ln\alpha.
+   \end{align} $$
