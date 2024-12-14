@@ -33,8 +33,10 @@
 ([corrigé](td8/td8-corr.pdf))
 
 [TD 9 - Convolution](td9/td9.md)
+([corrigé](td9/td9-corr.pdf))
 
 [TD 10 - Équation de la chaleur](td10/td10.md)
+([corrigé](td10/td10-corr.pdf))
 
 [Exam CC no. 1](exam-cc1/exam-cc1.md)
 
