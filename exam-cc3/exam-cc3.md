@@ -129,6 +129,9 @@ Effectuer le changement de variable $x = \varphi(y) := \sigma y + m$ dans cette 
 
 [**Indication** : on pourra retrouver cette valeur à l'aide du théorème de Fubini.]
 
+
+**Réponse.** En effectuant le changement de variable indiqué, on trouve $I=\frac{1}{\sqrt{2\pi}}  \int_{\mathbf{R}}  e^{-y^2/2}\,\mathrm{d}y.$ En changeant une nouvelle fois de variable pour $z=y/\sqrt{2}$, on obtient alors $I=\frac{1}{\sqrt{\pi}} \int_{\mathbf{R}} e^{-z^2}\,\mathrm{d}z$. On reconnais alors l'intégrale de Gauss, d'où $I=1$.
+
 ## 4.2
 
 Soit $X$ une variable aléatoire à valeurs dans $\mathbf{R}$ de densité
@@ -136,3 +139,5 @@ Soit $X$ une variable aléatoire à valeurs dans $\mathbf{R}$ de densité
 $$ f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-(x-m)^2/(2\sigma^2)}. $$
 
 On pose $Y = \varphi^{-1}(X)$, donner l'espérance de $Y$.
+
+**Réponse.** $\mathbf{E}(Y)=\int_{\mathbf{R}} \varphi^{-1}(x) f(x) \,\mathrm{d}x$. Par le changement de variable $x=\varphi(y)$, on trouve $\mathbf{E}(Y)=\frac{1}{\sqrt{2\pi}}\int_{\mathbf{R}} y  e^{-y^2/2} \,\mathrm{d}y=0$.
