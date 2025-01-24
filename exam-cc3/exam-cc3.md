@@ -91,9 +91,9 @@ Soit $a > 0$, déterminer la transformée de Fourier de $\chi_{[0,a]}$.
 
 $$\hat{\chi}_{[0,a]}(\xi) = \int _{0}^a e^{-2i\pi \xi x} dx =
 \begin{cases}
-     \frac{1-e^{-2i\pi \xi a}}{2i \pi \xi}& \text{if } \xi\neq 0 
+     \frac{1-e^{-2i\pi \xi a}}{2i \pi \xi}& \text{ si } \xi\neq 0 
      \\
-    a & \text{sinon.}
+    a & \text{ sinon.}
 \end{cases}
 $$
 
@@ -103,7 +103,19 @@ Remarque, une formule possible sans disjonction est : $\hat{\chi}_{[0,a]}(\xi)=a
 
 Déterminer la transformée de Fourier de $\chi_{[0,1]} * \chi_{[0,2]}$.
 
-**Réponse.** On sait que $\widehat{\chi_{[0,1]} * \chi_{[0,2]}}(\xi)=\hat{\chi}_{[0,1]}(\xi)\hat{\chi} _{[0,2]}(\xi)$.
+**Réponse.** On sait que $\widehat{\chi_{[0,1]} * \chi_{[0,2]}}(\xi)=\hat{\chi}_{[0,1]}(\xi)\hat{\chi} _{[0,2]}(\xi)$. De part la question précedente :
+
+$$
+\widehat{\chi _{[0,1]} * \chi _{[0,2]}}(\xi) =
+\begin{cases}
+     \frac{e^{-2i\pi \xi}+e^{-4i\pi \xi}-e^{-6i\pi \xi}-1}{4 \pi^2 \xi^2}& \text{ si } \xi\neq 0, 
+     \\
+    2 & \text{sinon;}
+\end{cases}
+$$
+
+ou encore, $\widehat{\chi _{[0,1]} * \chi _{[0,2]}}(\xi) = 2 e^{-i\pi \xi}e^{-2i\pi \xi}\textrm{sinc}(2\pi \xi)\textrm{sinc}(\pi \xi)$
+
 
 # Exercice 4 (4 points)
 
