@@ -70,9 +70,26 @@ Déterminer la valeur de cette intégrale.
 
 Montrer que le produit de convolution des deux fonctions caractéristiques $\chi_{[0,1]} * \chi_{[0,2]}$ est bien défini, puis le calculer.
 
+**Réponse.** Les fonctions  $\chi_{[0,1]}$ et  $\chi_{[0,2]}$ sont bornées et à support contenu dans $[0,2]$, donc de classe $L^1(\mathbf{R})$. Par conséquent $ $\chi_{[0,1]} * \chi_{[0,2]}\in L^1(\mathbf{R})$ est bien défini.
+
+$$\chi_{[0,1]} * \chi_{[0,2]}(x)= \int_{-\infty}^\infty \chi_{[0,1]}(y) \chi_{[0,2]}(x-y)dy=\int_0^1 \chi_{[0,2]}(x-y)dy$$
+
+Or $\chi_{[0,2]}(x-y)\neq 0$ si et seulement si $y\in [x-2,x]$. On a donc 5 cas:
+
+* $x<0$ : $\int_0^1 \chi_{[0,2]}(x-y)dy = 0$
+* $0\leq x <1$ : $\int_0^1 \chi_{[0,2]}(x-y)dy = \int_0^x dy = x$
+* $1\leq x<2$ : $\int_0^1 \chi_{[0,2]}(x-y)dy = \int_0^1 dy = 1$
+* $2\leq x<2$ : $\int_0^1 \chi_{[0,2]}(x-y)dy = \int_{x-2}^1 dy = 3-x$
+* $x\geq 0$ : $\int_0^1 \chi_{[0,2]}(x-y)dy = 0$
+
+  
 ## 3.2
 
 Soit $a > 0$, déterminer la transformée de Fourier de $\chi_{[0,a]}$.
+
+**Réponse.** $\chi_{[0,a]}$ est de classe $L^1$.
+
+$$\hat{\chi}_{[0,a]} = \int _{-\infty}^\infty $$
 
 ## 3.3
 
