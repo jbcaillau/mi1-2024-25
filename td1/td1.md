@@ -17,7 +17,7 @@ header-includes:
 $$
 I_1 := \int_0^\infty e^{-t}\ \mathrm{d}t,\quad
   I_2 := \int_0^1 \ln t\ \mathrm{d}t,\quad
-  I_3 := \int_2^\infty \frac{1}{t\ln t}\ \mathrm{d}t.
+  I_3 := \int_e^\infty \frac{1}{t\ln t}\ \mathrm{d}t.
 $$
 
 ## Exercice 2
